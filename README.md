@@ -6,7 +6,7 @@ It refers to a detailed choreographed pattern of martial arts movements made to 
 **Python Katas** are short, focused coding exercises designed for practice, aimed at improving specific programming skills, often involving solving problems or implementing algorithms.
 
 ## Getting started
-
+ 
 > [!NOTE]
 > To pull the new katas that don't exist in your fork, execute the following **from branch `main`**:
 > 
