@@ -1,12 +1,14 @@
 def do_n_times(func, n):
     """
     Executes the given function n times.
-
-    Args:
+    """
+    for i in range(n):
+        func()
+    """
+     Args:
         func: the function to execute
         n: the number of times to execute the function
     """
-    pass
 
 
 def say_hello():
