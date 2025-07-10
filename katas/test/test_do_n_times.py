@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import Mock
 from katas.do_n_times import do_n_times
-
+ 
 class TestDoNTimes(unittest.TestCase):
     def test_do_n_times(self):
         mock_func = Mock()
