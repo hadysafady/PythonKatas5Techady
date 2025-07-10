@@ -14,4 +14,7 @@ class TestIsUnique(unittest.TestCase):
 
     def test_unique_case_insensitivity(self):
         self.assertEqual(is_unique('Aa'), True)
+    
+    def test_unique_case_insensitivity(self):
+        self.assertEqual(is_unique('Aa!!'), False)
 

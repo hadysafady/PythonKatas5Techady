@@ -8,6 +8,8 @@ def is_unique(string):
     Returns:
         True if all characters are unique, False otherwise
     """
+    if len(set(string)) != len(string) :
+        return False
     
     
     return True
