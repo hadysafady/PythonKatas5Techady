@@ -7,7 +7,7 @@ class TestDoNTimes(unittest.TestCase):
         mock_func = Mock()
         do_n_times(mock_func,4)
         self.assertEqual(mock_func.call_count,4)
-      
+       
     def test_zero_times(self):
         mock_func=Mock()
         do_n_times(mock_func,0)
