@@ -8,8 +8,15 @@ def longest_common_prefix(strs):
     Returns:
         the longest common prefix, or an empty string if none exists
     """
-    return ""
-
+    same_prefix = ""
+    n = min(map(len,strs))
+    for j in range(n):
+        res = all([s[j] == strs[0][j] for s in strs])
+        if res :
+            same_prefix = same_prefix + strs[0][j]
+        else:
+            break
+    return same_prefix
 
 if __name__ == '__main__':
     test1 = ["flower", "flow", "flight"]
