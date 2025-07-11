@@ -1,17 +1,19 @@
 def rotate_matrix(matrix):
     """
     Rotates the given square matrix 90 degrees clockwise in place.
-
     Args:
         matrix: the 2D square matrix to rotate
     """
-    pass
-
+    new_mat = list(zip(*matrix[::-1]))
+    for i in range(len(new_mat)):
+        new_mat[i] = list(new_mat[i])
+                    
+    return new_mat
 
 def print_matrix(matrix):
     """
     Helper function to print a 2D matrix.
-
+    
     Args:
         matrix: the matrix to print
     """
@@ -28,7 +30,7 @@ if __name__ == '__main__':
 
     print("Original Matrix:")
     print_matrix(matrix)
-    rotate_matrix(matrix)
+    matrix = rotate_matrix(matrix)
     print("Matrix after 90-degree clockwise rotation:")
     print_matrix(matrix)
 
