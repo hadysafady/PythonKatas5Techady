@@ -8,8 +8,12 @@ def sum_of_digits(input_str):
     Returns:
         the sum of all digits in the string
     """
-    return 0
+    sum_digits=0
+    for i in range(len(input_str)):
+        if input_str[i].isdigit():
+            sum_digits = sum_digits + int(input_str[i])
 
+    return sum_digits
 
 if __name__ == '__main__':
     input1 = "abc123"
